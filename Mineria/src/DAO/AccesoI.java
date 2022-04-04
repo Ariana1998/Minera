@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mineria;
+package DAO;
+
+import objetoNegocio.Usuario;
 
 /**
  *
  * @author darkl
  */
-public class Mineria {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public interface AccesoI {
+  
+    public boolean accesar(String usuario, String contraseña);
+    public boolean registrar(Usuario usuario);
+    
     
 }
