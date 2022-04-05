@@ -103,14 +103,16 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (acceso.accesar(this.jTextField1.getText(), this.jTextField2.getText())) {
-            JOptionPane.showMessageDialog(this, "Aqui deberia abrir la siguiente ventana");
+            Menu menu = new Menu();
+            menu.setVisible(true);
         }else{
             JOptionPane.showMessageDialog(this, "no esta correcto");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-            new Registrar(acceso);
+         Registrar registrar = new Registrar(acceso);
+            registrar.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
